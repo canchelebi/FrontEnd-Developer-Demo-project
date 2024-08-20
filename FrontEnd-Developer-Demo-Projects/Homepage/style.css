@@ -1,0 +1,143 @@
+/* Base Start */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+body {
+  background-color: var(--off-white);
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red:  hsl(5, 85%, 63%);
+  --off-white:  hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+/* Base End 
+
+/* Helper Start */
+.w-100 {
+  width: 100%;
+} 
+.bt-none {
+  border-bottom: none !important;
+}
+/* Helper End*/
+
+/* Navbar Start */
+
+nav,
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+nav {
+  display: flex; /* svg dosyası ile nabvar elemanlarının aynı hizaya gelmesi sağlandı.*/
+  justify-content: space-between; /*Yanyana gelen svg ile navbar elemanlarını kendilerine ayırlan aland (1100px'lik alanda) eşit boşluklar olacak şekilde ayrıldı.*/
+  margin-top: 80px;
+}
+nav > ul {
+  list-style: none; /*Navbar elamanlarının madde simgesinin kaldırılması sağlandı. */
+  display: flex; /*Alt alta  olan navbar elamanlarının yanyana gelmesi sağlandı*/
+  gap: 40px; /*Navbar elemanları arasına nefes boşluğu bırakıldı. Padding ile de yapılabilirdi.*/
+}
+nav> ul > li > a {
+  text-decoration: none; /*Navbar elemanlarının altındaki çizgi kaldırıldı.*/
+  color: var(--Dark-grayish-blue); /*Renkleri değiştirildi.*/
+}
+nav > ul > li > a:hover {
+  text-decoration: underline; /*Navbar elemanlarının mouse ile üzerine gelindiğinde altında çizgi belirmesi sağlandı. */
+}
+
+/* Navbar End */
+
+/* Section  Start */
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /*Kendisine ayrılan alan yetersiz old. kendisini bir alt satıra atması sağlandı.*/
+  gap: 30px; /*section  ve aside arasına 30px'lik boşluk verildi*/
+  margin-top: 60px; /*Navbar ile section-aside arasına boşluk bırakıldı.*/
+}
+
+.container > section {
+  flex: 2; /*Altta aside 1 section'a 2 verilmesi, section'a daha az alan verilmesi içindir. */
+}
+.info {
+  display: flex; /* info'nun içerisinde yer alan elemanları yanyana gelmesi sağlandı. */
+  gap: 20px;
+}
+.info > .item1 {
+  flex: 1; /*info'nun içerisindeki item'a daha fazla yer kaplaması sağlandı (Normalde bu değer 0)*/ 
+}
+#item1 {
+  margin-top: 20px; /* h1 başlığı ile aynı hizaya gelmesi için bir id tanımlandı ve yukarıdan boşluk bırakıldı.*/
+}
+#item1 > p { /*Read more ile paragraf arasına boşluk bırakıldı.*/
+  margin-bottom: 70px;
+}
+#item1 > a { /*read more bölümü */
+  padding: 10px 40px;
+  width: 50%;
+  border: 1px solid; /*Çerçeve kalınlığı verildi.*/
+  /* display: inline-block; Çerçeve kalınlığı kendisine ayrılan satırın tamamını kapladığı için(Block olduğu için) inline element gibi davranması sağlandı. */
+  text-decoration: none; /*Altındaki çizgi kaldırıldı.*/
+  background-color: var(--Soft-red);
+  color: var(--off-white);
+}
+
+.info > .item > h1 {
+  font-size: 4rem; /* Başlık font ayarı ile oynandı. */
+  margin-top: 15px; 
+  margin-bottom: 0px; /*section'daki başlık aside bölümünü aşağıya doğru çektiğinden mb değerine sıfır verildi.*/
+}
+/* Section  End */
+
+/* Aside  Start */
+
+.container > aside {
+  background-color: var(--Very-dark-blue);
+  flex: 1; /*Container'in içindeki aside'e daha fazla alan kalması sağlandı.*/
+  padding: 25px 18px;
+ }
+ .container > aside > div {
+  margin-bottom: 70px;
+  border-bottom: 1px solid var(--Dark-grayish-blue);
+ }
+.container > aside > h2 {
+  color: var(--Soft-orange);
+  font-size: 2rem;;
+}
+.container > aside > div >  h3 {
+  color: var(--off-white);
+}
+.container > aside > div > p {
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 30px; /* Paragraflar ile border çizgisi arasına boşluk bırakıldı.*/
+}
+/* Section  End */
+
+/* Footer Start */
+.container > .item {
+  flex: 1; /*Foooter'ların eşit dağılması, yer kaplaması sağlandı.*/
+  display: flex; /*görsel ve text'lerin yanyana gelmesi sağlandı. s*/
+  gap: 15px; /*Nefes boşluğu verildi.*/
+  margin-bottom: 5%;
+}
+.container > .item > img { /* Text renklendirme*/
+  width: 40%;
+}
+.container > .item > div > h3 { /* Text renklendirme*/
+  color: var(--Soft-orange);
+}
+.container > .item > div > p { /* Text renklendirme*/
+  color: var(--Dark-grayish-blue);
+}
+/* Footer End */

@@ -1,0 +1,129 @@
+* { /*Temel ayarlamalar yapıldı.*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none; 
+  text-align: center;
+}
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+.main-section {
+  position: relative; /*main-section içerisinde olan etiketler pozisyonunu main-section class'ını referans alarak konumlandıracaklar.*/
+  opacity: 0.7; 
+  font-size: 27px;
+}
+.section-one h2 {
+  padding-top: 50px;
+}
+.section-two > .main-head > .border {
+  position: absolute;
+  text-align: center;
+  top: 1%; /*main-section'a göre konumlandığı için, referans olarak 50%'e gelmesini ve ortalanması sağlandı.*/
+  width: 50%; /*width yardımı ile de genişliğini 100 yaparak başlığın ortlanması sağandı. */
+
+}
+.main-img  {
+  background-image: url(.//img/image1.jpg);
+  min-height: 100vh; /*Yukarıda url ile çağırdıktan sonra, görselin gelmesi için belirli bir yükseklik verilmesi gerekir*/
+  background-position: center; /*Görsel ortalandı.*/
+  background-repeat: no-repeat; /*Görsel'in tekrar etmesi engellendi*/
+  background-size: cover; /*Kendisine ayırlan alanın tamamını kaplaması sağlandı*/
+  background-attachment: fixed; /*Scroll hareket ettikçe görsel sabit kalır.*/
+}
+.main-head {
+  position: absolute;
+  text-align: center;
+  top: 50%; /*main-section'a göre konumlandığı için, referans olarak 50%'e gelmesini ve ortalanması sağlandı.*/
+  width: 100%; /*width yardımı ile de genişliğini 100 yaparak başlığın ortlanması sağandı. */
+}
+.border {
+  color: #fff; /*span rengi değiştirildi*/
+  background-color: #111; /*başlık arkasındaki arka plan değiştirildi.*/
+  padding: 20px 25PX; /*Başlık arkasındaki arka plan ile başlık arasına nefes boşluğu verildi.*/
+  border-radius: 2px; /*Başlık arka plan kenarları yumuşatıldı.*/
+  letter-spacing: 8px; /*Harflerin arasını açmak, boşluk sağlandı.*/
+}
+.p-1 {
+  margin: 20px 50px;
+  padding-bottom: 50px; /*Nefes boşlukları*/
+}
+.section-two {
+  color:#fff;
+  background-color: #282e34;
+  position: relative;
+  letter-spacing: 1px; /*Harflerin arasını açmak, boşluk sağlandı.*/
+  opacity: 0.7;
+}
+.section-two > h2 {
+  padding-top: 50px;
+}
+.section-three {
+  color:#fff;
+  background-color: #282e34;
+  position: relative;
+  letter-spacing: 1px; /*Harflerin arasını açmak, boşluk sağlandı.*/
+  opacity: 0.7;
+  padding-top: 50px;
+}
+.section-three > h2 {
+  padding-top: 50px;
+}
+.image-two {
+  background-image: url(.//img/image2.jpg);
+  height: 400px; /*Görsel yüksekliği sayfa yapısına uyhun bir şekilde tanımlandı. */
+  background-position: center;  /*Görsel ortalandı.*/
+  background-repeat: no-repeat; /*Görsel'in tekrar etmesi engellendi*/
+  background-size: cover; /*Kendisine ayırlan alanın tamamını kaplaması sağlandı*/
+  background-attachment: fixed; /*Scroll hareket ettikçe görsel sabit kalır.*/
+  opacity: 0.7;  
+}
+
+.text-img-2 {
+  background-color: #282e34;
+  color: #fff;
+  letter-spacing: 1px; /*Harflerin arasını açmak, boşluk sağlandı.*/
+}
+.text-img-2 > h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.p-2 {
+  padding: 20px 50px;
+  padding-bottom:  50px;
+}
+.image-three {
+  background-image: url(.//img/image3.jpg);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.7;
+  letter-spacing: 1px; /*Harflerin arasını açmak, boşluk sağlandı.*/
+}
+.section-three {
+  color: #fff;
+  background-color:#282e34;
+}
+
+.p-3 {
+  padding: 20px 50px;
+  padding-bottom:  50px;
+}
+.last-img {
+  background-image: url(.//img/image1.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.7;
+  position: relative;
+}
+.border-last {
+  position: absolute;
+  text-align: center;
+
+}

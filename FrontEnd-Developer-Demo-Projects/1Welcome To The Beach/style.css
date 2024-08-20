@@ -1,0 +1,71 @@
+* { /*Ayarlar sıfırlandı.*/
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('./images/beach3.jpg');
+  background-repeat: no-repeat;  /*Görselin tekrar etmesini engeller*/
+  background-position: center; /*Görsel kendine ayrılan alanı ortalar*/
+  background-size: cover; /*Görsel kendine ayrılan alanı kaplar*/
+  height: 100vh;
+}
+main > h1 {
+  font-size: 50px; /*Section'un içindeki H1 başlığının font'u büyütüldü.*/
+  padding-top: 5px;
+  color: #926239;
+}
+main > p {
+  padding-top: 15px;
+  font-size: 20px;
+  color: #926239;
+}
+main > a {
+  margin-top: 15px;
+  padding: 12px 20px;
+  text-decoration: none; /*Buton altındaki çizgi kaldırıldı.*/
+  border: 1px solid #926239; /*Buton çevresine 1px kalınlığında bir çerçeve oluşturuldu.*/
+  border-radius: 15px; /*Çerçeve kenar yumuşama değeri verildi.*/
+  color: #926239;
+}
+main > a:hover {
+  background-color: #926239; /*Mouse ile buton üzerine gelindiğinde arka plan renginin değişmesi sağlandı.*/
+  color: #fff;
+}
+article {
+  font-size: 20px; /*text büyüklüğü ayarlandı.*/
+  background-color: #926239; /*Arka plan değiştirildi*/
+  color: #fff; /*text rengi değiştirildi*/
+  text-align: center; /*text ortalandı*/
+  padding-top: 20px; /*Nefes boşluğu bırakıldı*/
+}
+figure {
+  padding-top: 20px; /*Nefes boşluğu bırakıldı*/
+  font-size: 20px; /*text büyüklüğü ayarlandı.*/
+  text-align: center; /*text ortalandı*/
+  color: #926239;
+}
+section {
+  padding-top: 20px; /*Nefes boşluğu bırakıldı*/
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+}
+section > .p-1 {
+  background-color: #926239;
+  color: #fff;
+  padding: 10px 10px;
+}
+section > .p-2 {
+  background-color: #fff;
+  color: #926239;
+  padding: 10px 10px;
+}
+section >  .p-3 {
+  background-color: #926239;
+  color: #fff;
+  padding: 10px 10px;
+}
